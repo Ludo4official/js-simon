@@ -40,28 +40,42 @@ playButton.addEventListener('click',
 
         }
 
+        setTimeout(timer, 3000);
+
+        function timer() {
+
+        gridContainer.innerHTML = '';
+
+        console.log('Tempo scaduto');
+    
+            setTimeout(function(){
+
+                let risposta = parseInt(prompt('Inserisci il primo numero'));
+                console.log('Il primo numero inserito è:', risposta);
+
+                let risposta2 = parseInt(prompt('Inserisci il secondo numero'));
+                console.log('Il secondo numero inserito è:', risposta2);
+
+                let risposta3 = parseInt(prompt('Inserisci il terzo numero'));
+                console.log('Il terzo numero inserito è:', risposta3);
+
+                let risposta4 = parseInt(prompt('Inserisci il quarto numero'));
+                console.log('Il quarto numero inserito è:', risposta4);
+
+                let risposta5 = parseInt(prompt('Inserisci il quinto numero'));
+                console.log('Il quinto numero inserito è:', risposta5);
+
+            }, 500);
+
+        }
+
     }
 
 );
 
-setTimeout(timer, 3000);
 
-function timer() {
 
-    gridContainer.innerHTML = '';
 
-    console.log('Tempo scaduto');
-    
-    setTimeout(function(){
-        let risposta = parseInt(prompt('Inserisci il primo numero'))
-        let risposta2 = parseInt(prompt('Inserisci il secondo numero'))
-        let risposta3 = parseInt(prompt('Inserisci il terzo numero'))
-        let risposta4 = parseInt(prompt('Inserisci il quarto numero'))
-        let risposta5 = parseInt(prompt('Inserisci il quinto numero'))
-
-    }, 500)
-
-}
 
 
 
